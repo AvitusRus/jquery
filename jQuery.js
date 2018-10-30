@@ -2524,6 +2524,13 @@ $('<button>Анимация</button>')
 	e.preventDefault();
 });
 
+$('#button').on('click', function(evt) {
+  evt.preventDefault();
+  var content = $('<h1>Random Post Title</h1><p>Random post text.</p>');
+  
+  $('#element').append(content);
+});
+
 
 
 
